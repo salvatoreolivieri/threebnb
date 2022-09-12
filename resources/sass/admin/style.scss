@@ -1,0 +1,321 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+*{
+    font-family: 'Manrope', sans-serif;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+.user p {
+    margin-bottom: 5px;
+
+}
+
+.app-list{
+    width: 100%;
+    margin: 15px 0px;
+    text-align: center;
+}
+
+.app-image {
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 10px 0px;
+    width: 100%;
+    height: 60%;
+    border: 4px solid transparent;
+    padding: 0px;
+}
+
+.border-sponsorship {
+    border: 4px solid #E7624A;
+    padding: 0px;
+}
+
+.navbar-brand img{
+    width: 50px;
+}
+
+.new-app {
+    background-color: #EB594E;
+    border-radius: 20px;
+    transition: all 0.5s;
+
+    text-align: center;
+    padding: 5px 0px;
+
+    &:hover {
+        background-color: #C7453C;
+    }
+
+    a {
+        color: #FFFFFF;
+        transition: all 0.5s;
+
+        &:hover{
+
+            color: #000000;
+            text-decoration: none;
+        }
+    }
+
+}
+
+
+.navbar-light .navbar-brand{
+    color:white;
+}
+
+.error-msg {
+    color: red;
+}
+
+.dashboard button {
+    padding: 10px 15px;
+}
+
+.profile {
+    position: relative;
+    top: 68px;
+    border: 2px solid #DEE2E6;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px 2px #2A2A2A;
+    height: min-content;
+}
+
+.user-image {
+    text-align: center;
+}
+
+.profile img {
+    max-width: 70%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.app {
+    width: 45%;
+    margin: 20px 0px;
+}
+.app h4 {
+    font-weight: 600;
+}
+
+.app img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transform: scale(1.0);
+    transition: transform .4s;
+}
+.app img:hover {
+    transform: scale(1.2);
+}
+
+.col-9 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.label{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 3px 5px;
+    border-radius: 10px;
+    z-index: 999;
+}
+
+.label.sponsor-label {
+    color: #E7624A;
+    background-color: #FFFFFF;
+}
+
+.label.visible-label {
+    color: #E7624A;
+    background-color: #FFFFFF;
+}
+
+// EDIT, VIEW, DELETE, SPONSOR BUTTON
+
+.btn {
+    font-size: 18px;
+    border: none;
+    color: #FFFFFF;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.buttons-apartment {
+    margin: 10px 0px;
+}
+
+.view-button, .edit-button, .delete-button {
+    width: 30%;
+    font-size: 15px;
+}
+
+.view-button:hover, .edit-button:hover, .delete-button:hover {
+    width: 45%;
+    color: #000000;
+}
+
+.view-button {
+    background-color: #EB594E;
+}
+
+.edit-button {
+    background-color: #00719E;
+}
+
+.delete-button {
+    background-color: #DD0000;
+}
+
+.sponsor-button {
+    background-color: #0A7C00;
+    width: 95%;
+}
+
+.sponsor-button:hover {
+    font-size: 24px;
+    width: 100%;
+    background-color: #0EA500;
+}
+
+// EDIT, VIEW, DELETE, SPONSOR BUTTON
+
+/*
+  Popup Search Bar
+*/
+
+.custom-modal {
+    padding: 1rem;
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    opacity: 1;
+    transition: all 0.2s;
+    visibility: visible;
+  }
+
+  .custom-modal.hidden{
+    opacity: 0;
+    visibility: hidden;
+    display: flex!important;
+  }
+
+  .custom-modal.hidden .search-modal{
+    margin-top: 100px;
+  }
+
+
+  .custom-modal .backdrop {
+    position: absolute;
+    inset: 0;
+    background-color: #000000;
+    opacity: 0.4;
+  }
+
+  .custom-modal .search-modal {
+    transition: all 0.4s;
+    position: relative;;
+    width: 100%;
+    max-width: 500px;
+    margin: 0px auto;
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+// MEDIA QUERY
+
+@media screen and (max-width: 1200px) {
+    .app {
+        width: 90%;
+    }
+
+    .col-9 {
+        justify-content: center;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .app{
+        margin-top: 60px;
+    }
+    .col-md-7 {
+        margin: 20px auto;
+    }
+
+    .col-9 {
+        justify-content: center;
+        margin: auto;
+        flex: 0 0 90%;
+        max-width: 90%;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .col-12 {
+        width: 100%;
+    }
+
+    .col-9 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin: 0px;
+    }
+
+    .app {
+        width: 100%;
+        height: 35%;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .edit-view-buttons {
+        flex-wrap: wrap;
+    }
+
+    .view-button, .edit-button, .delete-button {
+        width: 80%;
+        margin: 3px 0px;
+
+        &:hover {
+            width: 100%;
+        }
+    }
+
+    .col-9 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .app {
+        border-bottom: 2px solid #EB594E;
+    }
+
+}
+// /MEDIA QUERY
+
+

@@ -1,0 +1,36 @@
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Variabili
+@import './partials/vars';
+
+// Fontawesome
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+
+// Fonts
+body{
+    font-family: 'Manrope', sans-serif;
+}
+
+
+//Global
+
+a:hover {
+    text-decoration: none;
+}
+
+
+ul {
+    list-style: none;
+}
+
+.custom-container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.orange-text{
+    color: $colore-primario;
+}
+
